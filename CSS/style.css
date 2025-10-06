@@ -1,0 +1,192 @@
+html{
+    background-image: url(/Image/back.jpg);
+}
+*{
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    /* font-weight: bold; */
+}
+.container{
+    /* width: 1200px; */
+    margin: auto;
+}
+h1,h2{
+    color: rgb(255, 94, 0); 
+    background-color: black;
+    margin: auto;
+    cursor: grab;
+}
+p{
+    font-size: 20px;
+    text-indent: 30px;
+    text-align: justify;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+a{
+    font-size: 1.2rem;
+}
+blockquote{
+    font-size: 1.2em;
+    font-style: oblique;
+}
+a:link{
+    color:rgb(255, 94, 0)
+}
+a:visited{
+    color: rgb(30, 126, 6);
+}
+a:active{
+    color: rgb(227, 241, 18);
+}
+a:hover{
+    background-color: black;
+}
+ul{
+    list-style-image: url(/Image/marker.png);
+    margin: 20px;
+}
+ol:nth-child(2n){
+    list-style-type: lower-latin;
+}
+table{
+    margin: 30px; 
+    border-collapse: collapse;
+    border: 2px solid black;    
+    }
+td, th{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    padding: 5px;
+    border: 2px solid black
+}
+iframe{
+    border: 0;
+}
+textarea{
+    width: 350px;
+    height: 150px;
+    resize: none;
+}
+.row{
+    padding: 3px;
+}
+.ui-checkbox, .ui-radio{
+    display: none;
+}
+.ui-checkbox-label, .ui-radio-label{
+    position: relative;
+}
+.ui-checkbox-label:before, 
+.ui-radio-label:before{
+    font: bold .8em sans-serif;
+    content: "";
+    display: inline-block;
+    border-radius: 2px;
+    width: 14px;
+    height: 14px;
+    background-color: rgb(255, 94, 0);
+    margin-right: 3px;
+}
+.ui-radio-label:before{
+    border-radius: 100%;
+}
+
+.ui-checkbox:checked + .ui-checkbox-label:before,
+.ui-radio:checked + .ui-radio-label:before{
+    background: rgb(5, 5, 5) url("data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22iso-8859-1%22%3F%3E%3C!DOCTYPE%20svg%20PUBLIC%20%22-%2F%2FW3C%2F%2FDTD%20SVG%201.1%2F%2FEN%22%20%22http%3A%2F%2Fwww.w3.org%2FGraphics%2FSVG%2F1.1%2FDTD%2Fsvg11.dtd%22%3E%3Csvg%20version%3D%221.1%22%20id%3D%22Layer_1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%20%20width%3D%2214px%22%20height%3D%2214px%22%20viewBox%3D%220%200%2014%2014%22%20style%3D%22enable-background%3Anew%200%200%2014%2014%3B%22%20xml%3Aspace%3D%22preserve%22%3E%3Cpolygon%20style%3D%22fill%3A%23FFFFFF%3B%22%20points%3D%2214%2C4%2011%2C1%205.003%2C6.997%203%2C5%200%2C8%204.966%2C13%204.983%2C12.982%205%2C13%20%22%2F%3E%3C%2Fsvg%3E");
+}
+
+.ui-checkbox:checked + .ui-checkbox-label:after,
+.ui-radio:checked + .ui-radio-label:after{
+    position: absolute;
+    content:"";
+    display: inline-block;
+    border-radius: 100%;
+    width: 24px;
+    height: 24px;
+    margin-right: 3px;
+    left: -4px;
+    top: -4px;
+    z-index: -1;
+    animation: ui-pulse 1s;
+}
+
+.ui-radio:checked + .ui-radio-label:after{
+    background-size: 10px;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 100%;
+}
+
+@keyframes ui-pulse {
+  0%{
+    background-color: #69e;
+    transform: scale(1.0);
+    opacity: 1;
+  }
+  100%{
+    background-color: #369;
+    transform: scale(1.6);
+    opacity: .1;
+  }
+}
+@media print {
+    html{
+        font-size: 16px;
+        color: black;
+        background: transparent;
+    }
+    html::after{
+        content: 'Live to Ride';
+        display: block;
+        position: absolute;
+        top: 100px;
+        left: 200px;
+
+        width: 300px;
+        height: 200px;
+
+        font-size: 50px;
+        line-height: 50px;
+        border: 5px solid yellowgreen;
+        color: purple;
+
+        text-align: center;
+        transform: rotate(20deg);
+        opacity: 0.5;
+    }
+    .container{
+        width: 100%;
+    }
+    .video, a, nav, footer{
+        text-decoration: none;
+        display: none;
+    }
+}
+
+@media screen and (max-width: 800px){
+    html{
+        background: wheat;
+    }
+    .container{
+        width: 500x;
+        margin: auto;
+    }
+    .logo{
+        display: block;
+        margin: auto;
+    }
+    /* .btn{
+        display: block;
+        text-decoration: none;
+        background: #69e;
+        color: orangered;
+        padding: 5px 20px;
+        text-align: center;
+        border-radius: 4px;
+        margin: 4px;
+        text-shadow: 0 1px 1px black;
+    } */
+}
+

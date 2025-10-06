@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Old rebel</title>
+        <link rel="stylesheet" href="/CSS/style.css" />
+    </head>
+    <body>
+        <header>
+            <div class = "container">
+                <h1 title="Old rebel">Old rebel. Harley-Davidson Dyna.</h1>
+                <nav>
+                    <ul>
+                        <li><a href ="/Pages/index.html">Главная </a></li>
+                        <li><a href ="/Pages/catalog.html">Содержание </a></li>
+                        <li><a href ="/Pages/about.html">История мотоциклов Harley-Davidson Dyna</a></li>
+                        <li><a href ="/Pages/lit.html">Литература </a></li>
+                        <li><a href ="/Pages/contacts.html">Обратная связь </a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+    </section>
+        <form>
+            <div class="row">
+                <label>Как Вас зовут</label>> 
+                <input type="text" name="fistname"/>
+            </div>
+        
+            <div class="row">
+                <label>Тема запроса</label> 
+            
+                <select name = 'query'>
+                    <option value="1">Сделать мир лучше</option>
+                    <option value="2" selected>Предложения по улучшению сайта</option>
+                    <option value="3">Создателю на пиво</option>
+                    <option value="4">Я люблю кататься!</option>
+                </select>
+            </div>
+        
+            <div class="row">
+                <label>В какое время с Вами связаться?</label>
+            <div>
+        
+            <div class="row">
+                <!-- <select name="time">
+                    <option value = "1">Немедленно!</option>
+                    <option value = "2">10:00 - 17:00</option>
+                    <option value = "3">17:00 - 20:00</option>
+                    <option value = "4">20:00 - 10:00</option>
+                </select> -->
+                <!-- <label>
+                    <input type="radio" value= "1" name="r"/>Немедленно</label>
+                <label>
+                    <input type="radio" value= "2" name="r"/>10:00 - 17:00</label>
+                <label>
+                    <input type="radio" value= "3" name="r"/>17:00 - 20:00</label> -->
+                <input type="radio" name="r" id="r1" class="ui-radio">
+                    <label for="r1" class="ui-radio-label">Немедленно!</label>
+                <input type="radio" name="r" id="r2" class="ui-radio">
+                    <label for="r2" class="ui-radio-label">10:00 - 17:00</label>
+                <input type="radio" name="r" id="r3" class="ui-radio">
+                    <label for="r3" class="ui-radio-label">17:00 - 20:00</label>
+            </div>
+            
+            <div class="row">
+                <textarea name ="message" required placeholder="введите сообщение" ></textarea>
+            </div>
+            
+            
+            <div class="row">
+                <!-- <label>
+                    <input type="checkbox" name="rule" value="1" checked required/>
+                    Соглашаюсь на обработку персональных данных
+                </label> -->
+                <input type="checkbox" name="rule" id="rule" class="ui-checkbox" value="1" checked required/>
+                    <label for="rule" class="ui-checkbox-label">Соглашаюсь на обработку персональных данных</label>
+            </div>   
+        
+            <div class="row">
+                <input type="submit" value="Отправить">
+                <input type="reset" value="Очистить">
+            </div>
+        </form>
+    </section>
+    <footer>
+        <div class = "container">
+          <p><strong><em>Old rebel. With blood, sweat and tough talk.</em></strong></p>
+          <p><em>E-mail:<a href="mailto:noname@noname.nnm"> noname@noname.nnm</a></em></p>
+         </div>
+       </footer>
+    </body>
+</html>
